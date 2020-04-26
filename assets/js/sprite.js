@@ -9,7 +9,7 @@ class Sprite {
   currentFrame = 0;
 
   x = 0;
-  y = 0;
+  y = 60;
 
   constructor(
     options = {
