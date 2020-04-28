@@ -9,13 +9,13 @@ class Player {
     y: 0,
   };
 
-  // player walking image
+  // player Running image
   playerRunningImage;
   playerRunningImageSrc = 'assets/img/running-right.png';
   runWidth = 107;
   runHeight = 108;
 
-  // player walking sprite
+  // player Running sprite
   runSprite = [0, 107, 214, 321];
   runFrame = 4;
   runSpriteCount = 0;
