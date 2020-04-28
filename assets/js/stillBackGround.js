@@ -9,7 +9,7 @@ class Background {
 
   // image
   image;
-  imageSrc = 'assets/img/fire-stage-1.jpg';
+  imageSrc = './assets/img/fire-stage-1.jpg';
 
   constructor() {
     this.image = new Image();
@@ -18,5 +18,6 @@ class Background {
 
   draw() {
     ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+    
   }
 }
