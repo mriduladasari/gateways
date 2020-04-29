@@ -44,9 +44,11 @@ class Player {
   _start = {};
 
   constructor() {
+    // Get the player running loaded
     this.playerRunningImage = new Image();
     this.playerRunningImage.src = this.playerRunningImageSrc;
 
+    // Get the player falling loaded
     this.playerFallingImage = new Image();
     this.playerFallingImage.src = this.playerFallingImageSrc;
   }
@@ -84,6 +86,21 @@ class Player {
       this.y,
       this.runWidth,
       this.runHeight
+    );
+  }
+
+  // draw falling animation
+  _drawRunning() {
+    ctx.drawImage(
+      this.playerFallingImage,
+      this.fallSprite[this.fallSpriteCount],
+      0,
+      107,
+      108,
+      this.x,
+      this.y,
+      this.fallWidth,
+      this.fallHeight
     );
   }
 
