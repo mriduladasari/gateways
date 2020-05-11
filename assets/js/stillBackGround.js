@@ -4,8 +4,8 @@ class Background {
   y = 0;
 
   // size
-  width = 375;
-  height = 812;
+  width = 330;
+  height = 700;
 
   // image
   image;
@@ -18,6 +18,5 @@ class Background {
 
   draw() {
     ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
-    
   }
 }
