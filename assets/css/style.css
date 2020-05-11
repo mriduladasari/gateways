@@ -12,10 +12,111 @@ body {
   align-items: center;
   justify-items: center;
   user-select: none;
-  background-color: #ace0ff;
+  background: linear-gradient(180deg, #121a31 0%, #000000 100%);
 }
 
 .world {
-  border: 1px solid #ace0ff;
+  /* border: 1px solid #ace0ff; */
+  border: 1px solid #121a31;
   background-color: #fff;
+}
+
+/* start game */
+.start-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(0deg, #000000 -10.7%, #121832 88.8%);
+  display: grid;
+}
+
+.start-screen-content {
+  position: absolute;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.game-title {
+  color: white;
+  font-family: 'Audiowide', cursive;
+  font-size: 100px;
+  font-weight: 900;
+  font-style: normal;
+  justify-self: center;
+  text-shadow: 3px 3px 6px #0048ff;
+  margin-top: 10%;
+}
+
+.game-sub-title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  font-weight: 200;
+  font-style: normal;
+  justify-self: center;
+  margin-top: -7%;
+}
+
+.start-button {
+  height: 66px;
+  width: 266px;
+  /* background: white; */
+  background-image: linear-gradient(109.2deg, #6b34ff 16.5%, #339ff7 81%);
+  /* opacity: 0.5; */
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  justify-self: center;
+}
+
+.start-button:hover {
+  transform: translate(0, -2px);
+}
+
+.about-button {
+  height: 66px;
+  width: 226px;
+  /* background: white; */
+  /* background-image: linear-gradient(109.2deg, #6b34ff 16.5%, #339ff7 81%); */
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  /* border: white; */
+  cursor: pointer;
+  border: none;
+  justify-self: center;
+  /* opacity: 0.5; */
+}
+
+.about-button {
+  /* background-color: #121832; */
+  background: linear-gradient(180deg, #0b101e 0%, #000000 100%);
+  border: 2px solid #339ff7;
+}
+
+.about-button:hover {
+  transform: translate(0, -2px);
+  /* opacity: 1; */
+}
+
+.information-wrapper {
+  margin-top: 5%;
+  justify-self: center;
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
 }
