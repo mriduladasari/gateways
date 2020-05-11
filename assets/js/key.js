@@ -1,63 +1,38 @@
-// class Key {
-//   _pressed = {};
+class Key {
+  _pressed = {};
 
-//   LEFT = 65;
-//   UP = 87;
-//   RIGHT = 68;
-//   DOWN = 83;
+  spaceBar = 32;
 
-//   isDown(keyCode) {
-//     return this._pressed[keyCode];
-//   }
+  //   HOOK = ;
 
-//   onKeydown(event) {
-//     this._pressed[event.keyCode] = true;
-//   }
+  isDown(keyCode) {
+    return this._pressed[keyCode];
+  }
 
-//   onKeyup(event) {
-//     delete this._pressed[event.keyCode];
-//   }
-// }
+  onKeydown(event) {
+    this._pressed[event.keyCode] = true;
+  }
 
-// const key = new Key();
+  onKeyup(event) {
+    delete this._pressed[event.keyCode];
+  }
+}
 
-// window.addEventListener(
-//   'keyup',
-//   function (event) {
-//     key.onKeyup(event);
-//   },
-//   false
-// );
+const key = new Key();
 
-// window.addEventListener(
-//   'keydown',
-//   function (event) {
-//     key.onKeydown(event);
-//   },
-//   false
-// );
+window.addEventListener(
+  'keyup',
+  function (event) {
+    key.onKeyup(event);
+  },
+  false
+);
 
-// // keys
-// // _checkKeys(event) {
-// //     const key = event.key.toLowerCase();
+window.addEventListener(
+  'keydown',
+  function (event) {
+    key.onKeydown(event);
+  },
+  false
+);
 
-// //     if (this.isAnimating) {
-// //         return;
-// //     }
-
-// //     if (key === 'w') {
-// //         this.isHighAttack = true;
-// //         this.isMidAttack = false;
-// //         this.isLowAttack = false;
-
-// //     } else if (key === 's') {
-// //         this.isHighAttack = false;
-// //         this.isMidAttack = false;
-// //         this.isLowAttack = true;
-
-// //     } else if (key === 'd') {
-// //         this.isHighAttack = false;
-// //         this.isMidAttack = true;
-// //         this.isLowAttack = false;
-// //     }
-// // }
